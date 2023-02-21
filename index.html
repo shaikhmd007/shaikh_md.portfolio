@@ -13,12 +13,13 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="./assets/js/functionalities.js"></script>
+  <script src="./assets/js/functionalities.js" defer></script>
 
   <!-- bootstrap <script></script> --><!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- <script defer src="./index.js"></script> -->
 </head>
 
 <body>
@@ -66,7 +67,7 @@
   <section class="hero-section py-5 px-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+        <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center py-5 px-4">
           <h2>Hello World 👋. I M shaikh_md
             Web dev , frontend software developer
             & This is my PortFolio Web
@@ -76,10 +77,10 @@
           </p>
 
           <div class="hero-button-container">
-            <a href="#projects" class="btn btn-dark align-self-baseline">My Projects</a>
+            <a href="#projects" class="btn1">My Projects</a>
             <a target="_blank"
               href="https://docs.google.com/document/d/1op7HD2PK1LZS9WT_PmxI6cQ4ZiFv2Ww5/edit?usp=sharing&ouid=101685079108711183913&rtpof=true&sd=true"
-              class="btn btn-outline-dark align-self-baseline">My Resume</a>
+              class="btn2">My Resume</a>
           </div>
 
           <div class="socials d-flex ">
@@ -90,16 +91,97 @@
               <i class="bi-twitter text-blue"></i>
             </a>
             <a class="nav-link px-2 " href="https://github.com/shaikhmd007">
-              <i class="bi-github text-dark"></i>
+              <i class="bi-github text-white"></i>
             </a>
           </div>
         </div>
-        <div class="hero-image col-md-4 col-sm-5 d-flex justify-content-center align-items-center m-1">
+        <div class="hero-image col-md-4 col-sm d-flex justify-content-center align-items-center m-1 p-4">
           <img src="/assets/img/Profile.png" alt="" class="img-fluid rounded-circle " />
         </div>
 
+        <!-- Random Quotes section -->
+        <div class="qoutes-card">
+          <hr>
+          <blockquote id="quote"></blockquote>
+          <h4 id="author"></h4>
+          <button id="nextButton" onclick="nextQuote()">Next </button>
+        </div>
       </div>
     </div>
+
+  </section>
+
+  <!-- Programers Quotes -->
+
+
+  <section id="testimonials" class="testimonials-section py-4 bg-dark ">
+
+    <div class="container py-5">
+
+      <h1 class="text-center text-white mb-4">Programmer's Quotes'!!</h1>
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="card p-2 rounded-2 border-2 shadow-lg">
+              <div class="row">
+                <div class="col-12 col-md-2 d-flex align-items-center">
+                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
+                </div>
+                <div class="col-12 col-md-10 py-2">
+                  <h2>
+                    Sam Batra
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    vel cum iure illum architecto, debitis provident ipsum ratione
+                    quae aut excepturi vitae consectetur distinctio maiores
+                    perspiciatis quisquam. Consequuntur, maxime suscipit?
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="card p-2 rounded-2 border-2 shadow-lg">
+              <div class="row">
+                <div class="col-12 col-md-2 d-flex align-items-center">
+                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
+                </div>
+                <div class="col-12 col-md-10 py-2">
+                  <h2>
+                    Sam Batra
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    vel cum iure illum architecto, debitis provident ipsum ratione
+                    quae aut excepturi vitae consectetur distinctio maiores
+                    perspiciatis quisquam. Consequuntur, maxime suscipit?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
   </section>
 
   <!-- About Me -->
@@ -209,10 +291,6 @@
               <h6>MySQL</h6>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </div>
@@ -316,7 +394,7 @@
 
   <!--Here My Testimonials Disbaled As of Now -->
 
-  <section id="testimonials" class="testimonials-section py-4 bg-dark ">
+  <!--  <section id="testimonials" class="testimonials-section py-4 bg-dark ">
 
     <div class="container py-5">
 
@@ -382,7 +460,7 @@
 
     </div>
 
-  </section>
+  </section> -->
 
   <!-- experience -->
   <section id="experience" class="experience-section min-vh-100 d-flex justify-content-center align-items-center">
@@ -391,18 +469,30 @@
 
       <div class="content d-flex flex-column justify-content-center align-items-center gap-2">
 
-        <h1 class="mb-3 text-white">Experieces <i class="bi-person-check"></i></h1>
+        <h1 class="mb-3 text-white">Experiences <i class="bi-person-check"></i></h1>
 
         <div class="card p-4 rounded-2">
           <h2>
-            Community Leader @ Coder Community
+            Apprenticeship @ Geekster
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur architecto minus consectetur provident
-            eaque possimus neque nostrum? Modi, est sed.
+            I am not fully fresher . I have 1+ years of experience as apprenticeship with Geekster.
+            where I have work on front-end Technologies and various frameworks like Reactjs ,Bootstrap,Redux , MUI,
+            AntD, tailwindCSS HTML5,CSS3 And JavaScript etc.
+            I have built some technical projects .and almost completed the
+            Front-End Development. <br>
+            Internship in Full Stack Web Development <br>
+            Technical Stack:
+            Front-End: React Js, HTML, CSS, JavaScript <br>
+            Back-End: Node Js, Express JAVA, C# C,C++,UNITY <br>
+            Problem Solving: Data Structures and Algorithms <br>
+            Project Developed: Chat Application: Movie-Fi using OMDB, GitFind for GitHub Users , DailyToDo App , Memory
+            Game, TicTacToe Game , GuessIt-Wordle etc.
           </p>
         </div>
 
+
+        <!--  CAN ADD EXTRA CARDS FOR MORE EXPERIENECS
         <div class="card p-4 rounded-2">
           <h2>
             Web Dev Intern @ Softtech
@@ -412,7 +502,7 @@
             eaque possimus neque nostrum? Modi, est sed.
           </p>
         </div>
-
+ -->
 
       </div>
 
