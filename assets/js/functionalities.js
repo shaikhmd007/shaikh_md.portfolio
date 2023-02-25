@@ -12,7 +12,7 @@ async function nextQuote() {
     nextButton.classList.add("nextQ");
     quote.innerText = `" ${data.content} "`;
     author.innerText = data.author;
-    author.style.color = "silver";
+    author.style.color = "white";
     quote.style.color = "silver";
 }
 nextQuote();

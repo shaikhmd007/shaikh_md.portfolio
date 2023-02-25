@@ -24,7 +24,7 @@
 
 <body>
   <!-- navbar starting here-->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./assets/img/logo3.jpg" alt="logo" class="logo
@@ -55,7 +55,7 @@
             <a class="nav-link" href="#experience">Experience </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resume"> My CV resume </a>
+            <a class="nav-link" href="#resume-section"> My CV resume </a>
           </li>
 
         </ul>
@@ -69,7 +69,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center py-5 px-4">
           <h2>Hello World 👋. I M shaikh_md
-            Web dev , frontend software developer
+            Web dev , software developer
             & This is my PortFolio Web
           </h2>
           <p class="hero-description">
@@ -85,13 +85,13 @@
 
           <div class="socials d-flex ">
             <a class="nav-link px-2 " href="https://www.linkedin.com/in/shaikhmd007/">
-              <i class="bi-linkedin text-blue "></i>
+              <i class="bi-linkedin text-blue fs-4"></i>
             </a>
             <a class="nav-link px-2" href="https://twitter.com/shaikhmd007">
-              <i class="bi-twitter text-blue"></i>
+              <i class="bi-twitter fs-4 text-blue"></i>
             </a>
             <a class="nav-link px-2 " href="https://github.com/shaikhmd007">
-              <i class="bi-github text-white"></i>
+              <i class="bi-github fs-4 text-white"></i>
             </a>
           </div>
         </div>
@@ -102,84 +102,16 @@
         <!-- Random Quotes section -->
         <div class="qoutes-card">
           <hr>
-          <blockquote id="quote"></blockquote>
-          <h4 id="author"></h4>
-          <button id="nextButton" onclick="nextQuote()">Next </button>
+          <!-- <i class="bi bi-quote"></i> -->
+          <img class="" src="assets/img/quote.svg" />
+          <blockquote id="quote"> </blockquote>
+          <span>-</span>
+          <strong id="author"></strong>
+          <p></p>
+
+          <button id="nextButton" onclick="nextQuote()"> ⏩Next ' Quote<i class="bi bi-quote"></i> </button>
         </div>
       </div>
-    </div>
-
-  </section>
-
-  <!-- Programers Quotes -->
-
-
-  <section id="testimonials" class="testimonials-section py-4 bg-dark ">
-
-    <div class="container py-5">
-
-      <h1 class="text-center text-white mb-4">Programmer's Quotes'!!</h1>
-
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-
-            <div class="card p-2 rounded-2 border-2 shadow-lg">
-              <div class="row">
-                <div class="col-12 col-md-2 d-flex align-items-center">
-                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
-                </div>
-                <div class="col-12 col-md-10 py-2">
-                  <h2>
-                    Sam Batra
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                    vel cum iure illum architecto, debitis provident ipsum ratione
-                    quae aut excepturi vitae consectetur distinctio maiores
-                    perspiciatis quisquam. Consequuntur, maxime suscipit?
-                  </p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item ">
-            <div class="card p-2 rounded-2 border-2 shadow-lg">
-              <div class="row">
-                <div class="col-12 col-md-2 d-flex align-items-center">
-                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
-                </div>
-                <div class="col-12 col-md-10 py-2">
-                  <h2>
-                    Sam Batra
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                    vel cum iure illum architecto, debitis provident ipsum ratione
-                    quae aut excepturi vitae consectetur distinctio maiores
-                    perspiciatis quisquam. Consequuntur, maxime suscipit?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
     </div>
 
   </section>
@@ -221,58 +153,66 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills-section  py-5 px-4">
-    <div class="container">
-      <div class="skills-content">
-        <h1 class="text-center">Skills/Technologies <i class="bi-gem"></i></h1>
+  <section id="skills" class="skills-section-background px-4">
+    <div class="container ">
+      <div class="skills-content ">
+        <h1 class="text-center text-white bg-black">Skills/Technologies <i class="bi-gem"></i></h1>
+        <div class="row skills-list flex justify-content-center gap-md-2 py-4 ">
 
-        <div class="row skills-list flex justify-content-center gap-md-2 py-4">
+          <ul class="skills ">
+            <li><strong>Working with people</strong> to identify problems and constraints,
+              and&nbsp;design&nbsp;solutions.</li>
+            <li><strong>Self driven & passionate</strong> about always learning, expanding my
+              tools&nbsp;and&nbsp;skills.</li>
+            <li><strong>Not intimidated</strong> to take on new projects with unknown&nbsp;paths&nbsp;forward.</li>
+            <li><strong>Managing time & resources</strong> while working on multiple simultaneous&nbsp;projects.</li>
+            <li><strong>Dedicated to user needs</strong>, to make their lives easier, not&nbsp;harder.</li>
+            <li><strong>High standard for visual quality</strong> but conscious of development&nbsp;constraints.</li>
+          </ul>
 
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
-              <img class="img-fluid mb-4" src="assets/img/html5-original.svg" />
-              <h6>HTML</h6>
+          <div class="col-6 col-sm-4 col-md-2 ">
+            <div class="card text-center p-4 mb-4 ">
+              <img class="img-fluid mb-4 htmlbackground " src="assets/img/html5-original.svg" />
+              <h6>HTML5</h6>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-2 ">
+            <div class="card text-center p-4  ">
+              <img class="img-fluid mb-4 " src="assets/img/css3-original.svg" />
+              <h6>CSS3</h6>
             </div>
           </div>
 
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
-              <img class="img-fluid mb-4" src="assets/img/css3-original.svg" />
-              <h6>CSS</h6>
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
-              <img class="img-fluid mb-4" src="assets/img/jsLogo.png" />
+            <div class="card text-center p-4 mb-4 ">
+              <img class="img-fluid mb-4 " src="assets/img/jsLogo.png" />
               <h6>JavaScript</h6>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
+            <div class="card text-center p-4 mb-4 ">
               <img class="img-fluid mb-4" src="assets/img/ReactLogo.png" />
               <h6>💙ReactJs</h6>
             </div>
           </div>
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
+            <div class="card text-center p-4 mb-4 ">
               <img class="img-fluid mb-4" src="assets/img/RwduxLogo.png" />
               <h6>Redux</h6>
             </div>
           </div>
-
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
-              <img class="img-fluid mb-4" src="assets/img/BootsrapLogo.jpeg" />
-              <h6>Bootstrap</h6>
+            <div class="card text-center p-4 mb-4 ">
+              <img class="img-fluid mb-4" src="assets/img/NodeJS.png" />
+              <h6>NodeJS</h6>
             </div>
           </div>
 
-
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
-              <img class="img-fluid mb-4" src="assets/img/vscode-original.svg" />
-              <h6>VSCode</h6>
+            <div class="card text-center p-4 ">
+              <img class="img-fluid mb-4" src="assets/img/BootsrapLogo.jpeg" />
+              <h6>Bootstrap</h6>
             </div>
           </div>
 
@@ -282,15 +222,26 @@
               <h6>Git</h6>
             </div>
           </div>
-
-
+          <div class="col-6 col-sm-4 col-md-2">
+            <div class="card text-center p-4 ">
+              <img class="img-fluid mb-4" src="assets/img/GitHub.png" />
+              <h6>GitHub</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <div class="card text-center p-4 mb-4">
+              <img class="img-fluid mb-4" src="assets/img/vscode-original.svg" />
+              <h6>VSCode</h6>
+            </div>
+          </div>
 
           <div class="col-6 col-sm-4 col-md-2">
-            <div class="card text-center p-4">
+            <div class="card text-center p-4 ">
               <img class="img-fluid mb-4" src="assets/img/MySql.logo.jpeg" />
               <h6>MySQL</h6>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -301,11 +252,11 @@
   <section id="projects" class="projects-section py-5 px-4">
     <div class="container">
       <div class="projects-content">
-        <h1 class="text-center">Projects <i class="bi-code-slash"></i></h1>
+        <h1 class="text-center text-white bg-black">Projects & Work <i class="bi-code-slash"></i></h1>
         <div class="row skills-list flex justify-content-center gap-md-2 py-4">
           <!-- project1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card shadow-lg">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-lg ">
               <img src="//source.unsplash.com/800x300?tech" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Find_Gits</h5>
@@ -318,17 +269,17 @@
                   of the page . <br>
                   ⚙️Tech stack used : React js , HTML,CSS & JavaScript .
                 </p>
-                <a href="https://find-gits.netlify.app/" class="btn  btn-outline-dark align-self-baseline "
+                <a href="https://find-gits.netlify.app/" class="btn btn-outline-light align-self-baseline "
                   alt="project" target="_blank">
                   <i class="bi-arrows-angle-expand"></i></a>
-                <a href="https://github.com/shaikhmd007/Find_Gits"
-                  class="btn btn-dark  btn-outline-light align-self-baseline ">
+                <a href="https://github.com/shaikhmd007/Find_Gits" target="_blank"
+                  class="btn  btn-outline-light align-self-baseline ">
                   <i class="bi-code-slash"></i></a>
               </div>
             </div>
           </div>
           <!-- project2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-lg-4 mb-4">
             <div class="card shadow-lg">
               <img src="//source.unsplash.com/400x150?web" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -338,14 +289,15 @@
                   ▪️It is a WebApp project of OMDB API for RESTful web service to obtain movie information, all content
                   and images on the
                   site . <br>
-                  ⚙️Tech stack used: ReactJS, HTML5, CSS3, Mui , OMDB, Hosted on Netlify.
+                  ⚙️Tech stack used: ReactJS, HTML5, CSS3, Mui , OMDB, Hosted on Netlify. <br>
                   ▪️Concepts Covered: fetch & Manage API Calls, LocalStorage,React-Routers, State Management & Hooks
                   etc.
                 </p>
-                <a href="https://movie-fi-app.netlify.app/" class="btn  btn-outline-dark align-self-baseline">
+                <a href="https://movie-fi-app.netlify.app/" target="_blank"
+                  class="btn  btn-outline-light align-self-baseline">
                   <i class="bi-arrows-angle-expand"></i></a>
-                <a href="#" class="btn btn-dark  btn-outline-light align-self-baseline "> <i
-                    class="bi-code-slash"></i></a>
+                <a href="https://github.com/shaikhmd007/movie-fi-app" target="_blank"
+                  class="btn  btn-outline-light align-self-baseline "> <i class="bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -362,10 +314,11 @@
                   From To-Do-List . <br>
                   ⚙️Tech Stack : HTML,CSS, JavaScript.
                 </p>
-                <a href="https://shaikhmd007.github.io/ADD-TO-DO/" class="btn  btn-outline-dark align-self-baseline">
+                <a href="https://shaikhmd007.github.io/ADD-TO-DO/" target="_blank"
+                  class="btn  btn-outline-light align-self-baseline">
                   <i class="bi-arrows-angle-expand"></i></a>
-                <a href="https://github.com/shaikhmd007/ADD-TO-DO"
-                  class="btn btn-dark  btn-outline-light align-self-baseline "> <i class="bi-code-slash"></i></a>
+                <a href="https://github.com/shaikhmd007/ADD-TO-DO" target="_blank"
+                  class="btn  btn-outline-light align-self-baseline "> <i class="bi-code-slash"></i></a>
               </div>
             </div>
           </div>
@@ -392,75 +345,6 @@
     </div>
   </section>
 
-  <!--Here My Testimonials Disbaled As of Now -->
-
-  <!--  <section id="testimonials" class="testimonials-section py-4 bg-dark ">
-
-    <div class="container py-5">
-
-      <h1 class="text-center text-white mb-4">Programer's Quotes'!!</h1>
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-
-            <div class="card p-2 rounded-2 border-2 shadow-lg">
-              <div class="row">
-                <div class="col-12 col-md-2 d-flex align-items-center">
-                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
-                </div>
-                <div class="col-12 col-md-10 py-2">
-                  <h2>
-                    Sam Batra
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                    vel cum iure illum architecto, debitis provident ipsum ratione
-                    quae aut excepturi vitae consectetur distinctio maiores
-                    perspiciatis quisquam. Consequuntur, maxime suscipit?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item ">
-            <div class="card p-2 rounded-2 border-2 shadow-lg">
-              <div class="row">
-                <div class="col-12 col-md-2 d-flex align-items-center">
-                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
-                </div>
-                <div class="col-12 col-md-10 py-2">
-                  <h2>
-                    Sam Batra
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                    vel cum iure illum architecto, debitis provident ipsum ratione
-                    quae aut excepturi vitae consectetur distinctio maiores
-                    perspiciatis quisquam. Consequuntur, maxime suscipit?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    </div>
-
-  </section> -->
 
   <!-- experience -->
   <section id="experience" class="experience-section min-vh-100 d-flex justify-content-center align-items-center">
@@ -473,7 +357,7 @@
 
         <div class="card p-4 rounded-2">
           <h2>
-            Apprenticeship @ Geekster
+            🔽 Apprenticeship @ Geekster
           </h2>
           <p>
             I am not fully fresher . I have 1+ years of experience as apprenticeship with Geekster.
@@ -510,8 +394,43 @@
 
   </section>
 
+
+  <!--Here My CV Resume-->
+
+  <section id="resume-section" class="resume-section py-4">
+    <div class="container py-5 ">
+      <h1 class="text-center text-dark mb-4 ">DownLoad & See My CV Resume🗒️</h1>
+      <div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card p-2 rounded-2 border-2 shadow-lg bg-dark">
+              <div class="row">
+                <div class="col-12 col-md-2 d-flex align-items-center">
+                  <img src="//source.unsplash.com/500x500?user" class="img-fluid rounded-circle " alt="">
+                </div>
+                <div class="col-12 col-md-10 py-2">
+                  <h2>
+                    shaikh_md
+                  </h2>
+                  <!-- DownLoad Resume🗒️ Btn -->
+                  <div class="save from-center">
+                    🗒️CV Resume
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
   <!-- Footer  -->
-  <footer class="footer bg-dark text-white">
+  <footer class="footer text-white">
     <div class="container py-5">
 
       <div class="row">
@@ -555,7 +474,7 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/img/logo3.jpg" alt="logo" class="logo">
         </a>
-        <p class="text-white">Copyright &copy; shaikh_md. 2022</p>
+        <p class="text-white Copyright">Copyright &copy; shaikh_md. 2022</p>
 
       </div>
 

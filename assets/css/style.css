@@ -2,13 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 
 /* global */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  font-family: 'Playfair Display', serif;
+  --def: #96B7C4;
+  --inv: #fff;
+  /* background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%); */
 }
 
 h1,
@@ -17,14 +26,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fredoka One", cursive;
+  /* font-family: "Fredoka One", cursive; */
+  font-family: 'Playfair Display', serif;
 }
 
 p {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   margin-bottom: 10px;
-  /* font-size: x-large; */
-  /* text-align: justify; */
 }
 
 section {
@@ -69,10 +77,13 @@ section {
 
 
 .nextQ:hover {
-  padding-right: 4px;
-  padding-left: 10px;
+  /* padding-right: 4px; */
+  padding-right: 35px;
+  /* width: 20vw; */
   color: silver;
-  border: none;
+  /* border: none; */
+  background-color: #ffffff;
+  color: black;
   transition: 0.5s;
 
 }
@@ -95,7 +106,7 @@ section {
 
 
 .nextQ:after {
-  content: ' Qoute↗';
+  content: '↗️';
   position: absolute;
   opacity: 0;
   color: silver;
@@ -138,21 +149,89 @@ section {
   transition: 0.5s;
 }
 
+/* Download Resume button */
+.save {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: var(--inv);
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.save:before,
+.save:after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.save:hover {
+  color: var(--def);
+  transition-delay: .5s;
+}
+
+.save:hover:before {
+  transition-delay: 0s;
+}
+
+.save:hover:after {
+  background: var(--inv);
+  transition-delay: .35s;
+}
+
+/* From center */
+
+.from-center:before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-center:after {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--inv);
+}
+
+.from-center:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.from-center:hover:after {
+  top: 0;
+  height: 100%;
+}
 
 /* navbar */
+.navbar {
+  background-image: url(../img/Dev.jpg);
+  /* background-color: rgba(0, 0, 0, 0.692); */
+  /* background-blend-mode: multiply; */
+  background-size: cover;
+  /* color: #fafafa; */
+  /* background-attachment: fixed; */
+}
 
 .navbar-brand h6 {
   margin-bottom: 0;
 }
 
 .navbar-brand {
-  font-family: "Fredoka One", cursive;
+  /* font-family: "Fredoka One", cursive; */
 }
-
-.navbar-nav>.nav-item>.nav-link {
-  color: blue;
-}
-
 
 .navbar-nav>.nav-item>.nav-link {
   position: relative;
@@ -181,6 +260,10 @@ section {
   transform: scaleX(1);
 }
 
+.bi-linkedin:hover {
+  color: blue;
+  /* font-size: x-large; */
+}
 
 .logo {
   width: 80px;
@@ -188,12 +271,18 @@ section {
   padding: 0;
   display: inline-block;
   border-radius: 40% 0;
-  box-shadow: 0 1px 32px 0 rgba(4, 244, 0, 0.47);
+  box-shadow: 0 .1px 12px 0 lime;
 }
 
+/* hero-section */
 .hero-section {
-  background: rgb(0, 0, 0);
 
+  background-image: url(../img/Dev.jpg);
+  /* background-color: rgba(0, 0, 0, 0.692); */
+  /* background-blend-mode: multiply; */
+  background-size: cover;
+  color: #fafafa;
+  background-attachment: fixed;
   /* color: #efefef; */
 }
 
@@ -207,87 +296,135 @@ section {
   color: #efefef;
 }
 
-
-
 .hero-image img {
-  /* border: 4px solid rgb(32, 32, 32); */
-  /* background: rgba(0, 0, 0, 0.316); */
-  /* padding: 1rem; */
-  /* margin: 1rem; */
-  /* width: 80%; */
-  box-shadow: 0 1px 5px 1px rgba(164, 172, 176, 0.846);
+  border: 1px solid rgb(32, 32, 32);
+  background: rgba(0, 0, 0, 0.316);
+  padding: 1rem;
+  margin: 1rem;
+  width: 80%;
+  box-shadow: 0 1px 14px 0 rgba(7, 22, 232, 0.463);
 }
 
 .about-me-section {
   /* min-height: 80vh; */
   padding: 80px 0;
-  background-image: url(/assets/img/dev.jfif);
-  background-color: rgba(0, 0, 0, 0.692);
-  background-blend-mode: multiply;
+  background-image: url(/assets/img/logo.jpg);
+  /* background-color: rgb(0, 0, 0); */
+  /* background-blend-mode: multiply; */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 
 }
 
 .about-me-content>.card {
-  background: rgba(160, 156, 156, 0.316);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(14, 13, 13, 0.854);
+  box-shadow: 0 8px 32px 0 rgba(14, 28, 236, 0.558);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(79, 0, 227, 0.902);
   color: #efefef;
 }
 
 /* Skills section */
 
-.skills-section {
-  background-color: black;
+.skills-section-background {
+  /* background-color: black; */
+  background-image: url(../img/Desktop.png);
+  /* background-color: rgb(0, 0, 0); */
+  /* background-blend-mode: multiply; */
+  background-size: cover;
+  /* rotate:  45deg; */
+  /* color: #fafafa; */
+  background-attachment: fixed;
+}
+
+ul {
+  background-image: url(../img/Dev.jpg);
+  background-attachment: fixed;
+  font-size: large;
+}
+
+li {
+  color: #96B7C4;
+}
+
+strong {
+  /* rotate: 45deg; */
+  color: white;
 }
 
 /*
 projects-section
 */
-.container>.content>.card {
-  background: rgba(17, 16, 16, 0.477);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+.projects-section {
+  background-image: url(../img/ProjectsBackground1.jpg);
+  /* background-color: rgba(0, 0, 0, 0.692); */
+  background-blend-mode: multiply;
+  background-size: cover;
+  /* color: #fafafa; */
+  background-attachment: fixed;
+}
+
+/* .projects-section Cards*/
+.card-body {
+  /* background: rgba(17, 16, 16, 0.477); */
+  background-image: url(../img/ProjectsBackground1.jpg);
+  box-shadow: 0 8px 32px 0 rgba(0, 17, 251, 0.37);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(79, 2, 233, 0.997);
   color: #efefef;
 }
 
-.projects-section {
-  background: #efefef;
-  /* about-me-content */
+.card-body>h5,
+.card-text {
+  color: lime;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px rgba(11, 11, 11, 0.974);
 }
 
-.bi-linkedin:hover {
-  color: blue;
-  /* font-size: x-large; */
-}
 
-/* testimonials */
 
-.carousel-item .card {
-  max-width: 75%;
-  margin: 0 auto;
-}
 
 /* experience-section */
 
 .experience-section {
-  background-image: url(../img/Desktop.png);
-  background-color: rgba(0, 0, 0, 0.692);
+  background-image: url(../img/Dev.jpg);
+  /* background-color: rgba(0, 0, 0, 0.692); */
   background-blend-mode: multiply;
   background-size: cover;
+  /* color: #fafafa; */
   background-attachment: fixed;
+}
+
+/* .experience-section card */
+
+.container>.content>.card {
+  background: rgba(17, 16, 16, 0.477);
+  box-shadow: 0 8px 32px 0 rgba(10, 23, 207, 0.543);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(77, 8, 216, 0.756);
+  color: #efefef;
+}
+
+/* Footer section */
+.footer {
+  background-image: url(../img/Dev.jpg);
+  /* background-color: rgba(0, 0, 0, 0.692); */
+  background-blend-mode: multiply;
+  background-size: cover;
+  /* color: #fafafa; */
+  /* background-attachment: fixed; */
+}
+
+.Copyright {
+  font-family: 'Playfair Display', serif;
 }
 
 @media screen and (min-width:680) {
