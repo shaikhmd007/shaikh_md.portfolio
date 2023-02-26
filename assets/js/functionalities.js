@@ -9,7 +9,7 @@ async function nextQuote() {
     const response = await fetch('https://api.quotable.io/random');
     const data = await response.json();
     // console.log(data);
-    nextButton.classList.add("nextQ");
+    nextButton.classList.add("nextQuote");
     quote.innerText = `" ${data.content} "`;
     author.innerText = data.author;
     author.style.color = "white";
