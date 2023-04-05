@@ -356,6 +356,11 @@ blockquote {
   border-radius: 50%;
 
 }
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -30%;
+  margin-top: .125rem;
+}
 
 /* hero-section */
 
