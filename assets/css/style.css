@@ -339,6 +339,12 @@ blockquote {
   justify-content: flex-end;
   /* display: inline; */
 }
+.view:hover {
+  cursor: wait;
+  padding: .2rem;
+  color: white;
+  background-color: #0d1117;
+}
 
 .bi-moon-stars-fill {
   color: white;
